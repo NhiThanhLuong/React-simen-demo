@@ -1,0 +1,32 @@
+.previousButton,
+.nextButton {
+    position: absolute;
+    z-index: 2;
+    $size: 30px;
+    background-color: #fff;
+    height: $size;
+    width: $size;
+    color: rgba(136, 136, 136, 0.5);
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    &:hover {
+        background-color: #e34444;
+        color: #fff;
+    }
+}
+
+.previousButton {
+    left: 15px;
+}
+
+.nextButton {
+    right: 15px;
+}
+
+.row {
+    position: relative;
+}
+
+.suggest__title-img {
+    cursor: pointer;
+}

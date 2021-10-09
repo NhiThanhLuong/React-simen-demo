@@ -1,0 +1,34 @@
+.previousButton,
+.nextButton {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  height: 30px;
+  width: 30px;
+  color: rgba(136, 136, 136, 0.5);
+  border: 1px solid #eaeaea;
+  cursor: pointer;
+}
+
+.previousButton:hover,
+.nextButton:hover {
+  background-color: #e34444;
+  color: #fff;
+}
+
+.previousButton {
+  left: 15px;
+}
+
+.nextButton {
+  right: 15px;
+}
+
+.row {
+  position: relative;
+}
+
+.suggest__title-img {
+  cursor: pointer;
+}
+/*# sourceMappingURL=productsSlider.css.map */

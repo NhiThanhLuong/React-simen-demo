@@ -1,0 +1,24 @@
+.load-btn {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-width: 300px;
+  min-height: 40px;
+  background-color: #fff;
+  color: #666;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  border: 1px solid #eaeaea;
+  padding: 6px 10px;
+  border-radius: 2px;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.load-btn:hover {
+  background-color: #e34444;
+  color: #fff;
+}
+/*# sourceMappingURL=products.css.map */

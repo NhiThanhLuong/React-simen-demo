@@ -1,0 +1,122 @@
+.view-cart {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 1;
+
+    width: 300px;
+    min-height: 100px;
+
+    background-color: #fff;
+
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+
+    box-shadow: -1px 1px 2px #666;
+    .empty {
+        >span {
+            display: block;
+            margin-left: 30px;
+            line-height: 100px;
+        }
+    }
+}
+
+.mycart {
+    position: relative;
+    &::before,
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 3px;
+        left: 40px;
+        z-index: 1;
+        
+        height: 0;
+        width: 0;
+
+        border: solid transparent;
+        pointer-events: none;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        // @include hidden;
+    }
+    &::after {
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #fff;
+        border-width: 15px;
+        margin-left: 0px;
+        margin-top: 3px;
+    }
+    &::before {
+        border-color: rgba(234, 234, 234, 0);
+        border-bottom-color: #eaeaea;
+        border-width: 17px;
+        margin-left: -2px;
+    }
+}
+
+.item-container {
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 10px;
+    &__image {
+        img {
+            height: 100px;
+            width: 80px;
+            border: 1px solid;
+            border-color: #eaeaea;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                border-color: #e34444;
+            }
+        }
+    }
+    &__infor {
+        margin-left: 10px;
+        span {
+            display: block;
+        }
+        .item__price {
+            font-weight: 800;
+            color: #333;
+        }
+    }
+    &__remove {
+        margin-left: auto;
+    }
+}
+
+.item__remove {
+    >i {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            color: #e34444
+        }
+    }
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 15px;
+
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    .total {
+        font-size: 1.5rem;
+    }
+    .price {
+        color: #333;
+        font-weight: 800;
+        font-size: 1.6rem;
+    }
+}
