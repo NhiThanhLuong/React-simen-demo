@@ -1,3 +1,5 @@
+import furnitureCoverImg from '../assets/image/furniture.png'
+
 import product1Img from "../assets/image/product1.jpg"
 import product2Img from "../assets/image/product2.jpg"
 import product3Img from "../assets/image/product3.jpg"
@@ -44,6 +46,8 @@ import logo5Img from '../assets/image/logo5.png'
 import logo6Img from '../assets/image/logo6.png'
 
 export {
+    furnitureCoverImg,
+
     product1Img,
     product2Img,
     product3Img,

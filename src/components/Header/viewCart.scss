@@ -1,18 +1,30 @@
+@mixin hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@mixin show {
+    opacity: 1;
+    visibility: visible;
+}
+
 .view-cart {
     position: absolute;
     top: 35px;
     right: 0;
     z-index: 1;
-
+    
     width: 300px;
     min-height: 100px;
-
+    
     background-color: #fff;
-
+    
     border: 1px solid #eaeaea;
     border-radius: 2px;
-
+    
     box-shadow: -1px 1px 2px #666;
+    transition: all 0.4s ease-in;
+    @include hidden;
     .empty {
         >span {
             display: block;
@@ -54,44 +66,49 @@
         border-width: 17px;
         margin-left: -2px;
     }
+    &:hover {
+        .view-cart {
+            @include show;
+        }
+    }
 }
 
 .item-container {
     max-height: 300px;
     overflow-y: scroll;
     padding: 15px;
-}
-
-.item {
-    display: flex;
-    margin-bottom: 10px;
-    &__image {
-        img {
-            height: 100px;
-            width: 80px;
-            border: 1px solid;
-            border-color: #eaeaea;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            &:hover {
-                border-color: #e34444;
+    .item {
+        display: flex;
+        margin-bottom: 10px;
+        &__image {
+            img {
+                height: 100px;
+                width: 80px;
+                border: 1px solid;
+                border-color: #eaeaea;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover {
+                    border-color: #e34444;
+                }
             }
         }
-    }
-    &__infor {
-        margin-left: 10px;
-        span {
-            display: block;
+        &__infor {
+            margin-left: 10px;
+            span {
+                display: block;
+            }
+            .item__price {
+                font-weight: 800;
+                color: #333;
+            }
         }
-        .item__price {
-            font-weight: 800;
-            color: #333;
+        &__remove {
+            margin-left: auto;
         }
-    }
-    &__remove {
-        margin-left: auto;
     }
 }
+
 
 .item__remove {
     >i {

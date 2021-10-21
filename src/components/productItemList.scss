@@ -1,0 +1,40 @@
+.product-img-info.product--list {
+    margin: 40px 0;
+}
+
+.product-img-info {
+    .infor--wrap {
+        &__name {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #666;
+        }
+        &__old-price {
+            margin-right: 10px;
+            font-weight: 600;
+            text-decoration: line-through;
+            font-size: 1.6rem;
+        }
+        &__new-price {
+            color: #333;
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+        .product__rating {
+            text-align: left;
+            font-size: 1.2rem;
+            .fa-star--gold {
+                color: #f1d201;
+            }
+            .fa-star-half-alt {
+                color: #f1d201;
+            }
+        }
+        &__description {
+            width: 60%;
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+        }
+    }
+    
+}

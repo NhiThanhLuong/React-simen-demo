@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import img7 from '../../assets/image/img7.png'
 import img8 from '../../assets/image/img8.jpg'
 import img9 from '../../assets/image/img9.jpg'
@@ -1053,24 +1054,24 @@ function SubMenu() {
         },
     ]
 
-    const [active, setActive] = useState(1)
-
     return (
         <ul className="sub-menu v-center hide-on-low-PC-mobile-tablet">
-            {data.map(({id, content}) => <SubMenuItem key={id} id={id} props={content} active={active} setActive={setActive}/>)}
+            {data.map(({id, content}) => <SubMenuItem key={id} id={id} props={content}/>)}
         </ul>
     )
 }
 
-function SubMenuItem({id, props, active, setActive}) {
+function SubMenuItem({id, props}) {
     const {name, isParent, items, list, listImages, privateClass, colClass, imageLink} = props
+    const isHomePage = name === 'HOME'
 
     return (
-        <li 
+        <NavLink to={`/${isHomePage ? '' : name.toLowerCase()}`}
+            exact={isHomePage}
+            activeClassName="sub-menu__item--active"
             className={classNames(
             'sub-menu__item', 
             {'sub-menu__item--static': list || listImages}, 
-            {'sub-menu__item--active': active === id}
             )}
         >
             <SubMenuItemLink name={name} isParent={isParent}/>
@@ -1107,7 +1108,7 @@ function SubMenuItem({id, props, active, setActive}) {
                     </div>
                 </div>
             }
-        </li>
+        </NavLink>
     )
 }
 

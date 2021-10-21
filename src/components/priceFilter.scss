@@ -1,0 +1,36 @@
+.price-filter {
+    // width: 20%;
+    
+    &__title {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #333;
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+    .box-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .range {
+        width: 100%;
+        .rc-slider-track {
+            background-color: #e34444;
+        }
+        .rc-slider-handle {
+            border-radius: 0;
+            border-color: #e34444;
+        }
+        .rc-slider-tooltip-inner {
+            min-width: 40px;
+        }
+    }
+}
+
+.price-filter--wrap {
+    padding: 5px 15px;
+    border: 1px solid #333;
+}

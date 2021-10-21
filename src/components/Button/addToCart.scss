@@ -1,0 +1,21 @@
+.add-to-cart-wrap {
+    width: 200px;
+    padding: 5px 30px;
+
+    border: 1px solid #eaeaea;
+
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.4s ease;
+    i {
+        margin-right: 5px;
+    }
+    &:hover {
+        background-color: #e34444;
+        color: #fff;
+        i {
+            animation: horizontal 2s ease infinite;
+        }
+    }
+}

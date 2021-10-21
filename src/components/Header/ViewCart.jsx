@@ -12,8 +12,8 @@ const ViewCart = () => {
     const cartTotalAmount = carts.cartTotalAmount
     const dispatch = useDispatch()
 
-    const handleClick = (id) => {
-        dispatch(removeFromCart(id))
+    const handleClick = (item) => {
+        dispatch(removeFromCart(item))
     }
 
     useEffect(() => {
@@ -44,7 +44,7 @@ const ViewCart = () => {
                                             <span className="item__name">{item.name}</span>
                                             <span className="item__price">{item.cartQuantity} x $ {item.newPrice.toFixed(2)}</span>
                                         </div>
-                                        <div className="item__remove" onClick={() => handleClick(item.id)}>
+                                        <div className="item__remove" onClick={() => handleClick(item)}>
                                             <i className="fas fa-trash-alt"/>
                                         </div>
                                     </div>

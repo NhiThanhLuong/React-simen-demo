@@ -4,6 +4,7 @@ import { animated, useTrail } from "@react-spring/web";
 import { addToCart } from "../../features/slice/cartSlice.js";
 import { useDispatch } from "react-redux";
 import './products.scss'
+import { Link } from "react-router-dom";
 
 import ProductRating from "./ProductRating.jsx";
 import ProductsSlider from "./ProductsSlider.jsx"
@@ -87,12 +88,12 @@ const Product = forwardRef(({id, isSale, img, name, oldPrice, newPrice, rating},
     return (
         <div className={classNames('product', {'product--sale': isSale})}>
             <div className="product-img-info" style={styles}>
-                <a href="" className="product__link" ref={ref}>
+                <Link to={`product/${id}`}  className="product__link" ref={ref}>
                     <img src={img} className="product__img" alt=""/>
                     <div className="product__sale">
                         SALE!
                     </div>
-                </a>
+                </Link>
                 <div className="item-box-hover">
                     <div className="cart-wrap" onClick={handleClick}>
                         <i className="fas fa-shopping-cart"></i> ADD TO CART

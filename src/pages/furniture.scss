@@ -1,0 +1,50 @@
+.furniture-page {
+    .img-cover {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .product--wrapper {
+        margin-top: 40px;
+    }
+}
+
+.sort--wrap {
+    border: 1px solid #250;
+    height: 100%;
+    .title-page {
+        display: block;
+        color: #000;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 700;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        .icons-sort {
+            display: flex;
+            .sort-item {
+                margin:0 10px;
+                padding: 5px 10px;
+                border: 1px solid #eaeaea;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                i {
+                    transform: scale(1.3);
+                }
+                &:hover {
+                    color: #e34444;
+                }
+                &--selected {
+                    background-color: #e34444;
+                    color: #fff;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
