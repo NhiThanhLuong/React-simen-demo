@@ -37,9 +37,9 @@ const NavProduct = ({navProducts, active, children}) => {
 const NavProductItem = ({id, active, title}) => {
     return (
         <li className={classNames("nav-product__item", {"nav-product__item--first": id === 1})}>
-            <a href="" className={classNames("nav-product__item__title-link", {"nav-product__item__title-link--active": active === id})}>
+            <span className={classNames("nav-product__item__title-link", {"nav-product__item__title-link--active": active === id})}>
                 {title}
-            </a>
+            </span>
         </li>
     )
 }
@@ -88,7 +88,7 @@ const Product = forwardRef(({id, isSale, img, name, oldPrice, newPrice, rating},
     return (
         <div className={classNames('product', {'product--sale': isSale})}>
             <div className="product-img-info" style={styles}>
-                <Link to={`product/${id}`}  className="product__link" ref={ref}>
+                <Link to={`/react-simen-demo/product/${id}`}  className="product__link" ref={ref}>
                     <img src={img} className="product__img" alt=""/>
                     <div className="product__sale">
                         SALE!
@@ -99,17 +99,15 @@ const Product = forwardRef(({id, isSale, img, name, oldPrice, newPrice, rating},
                         <i className="fas fa-shopping-cart"></i> ADD TO CART
                     </div>
                     <div className="box-inner v-center">
-                        <a 
-                            href="" 
+                        <span 
                             className="box-inner__item wishlist" 
                             onMouseOver={handleOnMouseOver}
                             onMouseOut={handleOnMouseOut}
                         >
                             <i className="fas fa-heart"></i>
                             <div className="icon-script">Add to Wishlist</div>
-                        </a>
-                        <a 
-                            href="" 
+                        </span>
+                        <span 
                             className="box-inner__item compare" 
                             onMouseOver={handleOnMouseOver}
                             onMouseOut={handleOnMouseOut}
@@ -117,20 +115,19 @@ const Product = forwardRef(({id, isSale, img, name, oldPrice, newPrice, rating},
                             <i className="fas fa-random"></i>
                             <div className="icon-script">Compare</div>
 
-                        </a>
-                        <a 
-                            href="" 
+                        </span>
+                        <span 
                             className="box-inner__item view" 
                             onMouseOver={handleOnMouseOver}
                             onMouseOut={handleOnMouseOut}
                         >
                             <i className="fas fa-eye"></i>
                             <div className="icon-script">Quick View</div>
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>
-            <a href="" className="product__name">{name}</a>
+            <Link to={`/react-simen-demo/product/${id}`} className="product__name">{name}</Link>
             <div className="product__price">
                 {isSale && <span className="old-price">$ {oldPrice.toFixed(2)}</span>}
                 <span className="new-price">$ {newPrice.toFixed(2)}</span>

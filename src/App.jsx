@@ -1,4 +1,4 @@
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import BackToTop from "react-back-to-top-button";
 import './assets/css/base.css';
 import './assets/css/style.scss';
@@ -28,19 +28,19 @@ function App() {
         <ToastContainer/>
         <Header/>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/react-simen-demo/">
           <Container/>
         </Route>
-        <Route path="/product/:id">
+        <Route path="/react-simen-demo/product/:id">
           <ProductItem/>
         </Route>
-        <Route path="/furniture">
+        <Route path="/react-simen-demo/furniture">
           <Furniture/>
         </Route>
-        <Route path="/coffee tables">
+        <Route path="/react-simen-demo/coffee tables">
           <CoffeeTables />
         </Route>
-        <Route path="/sofas">
+        <Route path="/react-simen-demo/sofas">
           <Sofas />
         </Route>
         <Route path="*" component={NotFound} />

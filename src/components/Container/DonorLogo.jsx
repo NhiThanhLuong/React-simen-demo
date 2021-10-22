@@ -1,4 +1,6 @@
 import { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './donorLogo.scss'
 import { logo1Img,logo2Img,logo3Img,logo4Img,logo5Img,logo6Img } from '../../const/img';
 
 // Import Swiper React components
@@ -32,7 +34,7 @@ const DonorLogo = () => {
 
     return (
         <div className="grid wide">
-            <div className="donor-logo__container" style={{borderTop: '1px dotted #000'}}>
+            <div className="donor-logo__container">
                 <div className="donor-logo row-scroll no-gutters">
                     <Swiper
                         ref={swiperRef}
@@ -66,9 +68,9 @@ const DonorLogo = () => {
                     >
                         {donorlogos.map(({id, img}) => (
                             <SwiperSlide key={id}>
-                                <a href="" className="donor-logo__item col">
+                                <Link to='/react-simen-demo/logo' className="donor-logo__item col">
                                     <img src={img} alt=""/>
-                                </a>
+                                </Link>
                             </SwiperSlide>
                         ))}
                     </Swiper>

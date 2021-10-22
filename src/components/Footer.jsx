@@ -22,8 +22,8 @@ const Footer = () => {
                 iconClassName: 'fas fa-envelope',
                 inforText: 
                 <>
-                    <a href="">contact@simen.com</a>
-                    <a href="">info@simen.com</a>
+                    <span>contact@simen.com</span>
+                    <span>info@simen.com</span>
                 </>,
             },
         ]

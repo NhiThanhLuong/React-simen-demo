@@ -10,6 +10,7 @@ import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
 
 import SwiperCore, { Pagination, Navigation } from "swiper";
+import { Link } from 'react-router-dom';
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
 
@@ -75,17 +76,17 @@ const LatestPostItem = ({props}) => {
     const {img, date, month, author, title, excerpt} = props
     return (
         <div className="products__lastest-posts__item col">
-            <a href="" className="products__lastest-posts__item__img img-effect-hover-1">
+            <Link to='/react-simen-demo/no-content' className="products__lastest-posts__item__img img-effect-hover-1">
                 <img src={img} alt=""/>
-            </a>
+            </Link>
             <div className="products__lastest-posts__item__infor">
                 <div className="date-month">
                     <div className="date-month__date">{date}</div>
                     <div className="date-month__month">{month}</div>
                 </div>
                 <div className="products__lastest-posts__item__content">
-                    <a href="" className="author">{author}</a>
-                    <a href="" className="title">{title}</a>
+                    <Link to='/react-simen-demo/no-content' className="author">{author}</Link>
+                    <Link to='/react-simen-demo/no-content' className="title">{title}</Link>
                     <div className="excerpt">{excerpt}</div>
                 </div>
             </div>

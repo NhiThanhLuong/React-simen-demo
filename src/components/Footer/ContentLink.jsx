@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom"
+
+
 const ContentLink = ({link}) => {
     return (
-        <a href="" className="footer__widget__content__link">{link}</a>
+        <Link to='/react-simen-demo/no-content' className="footer__widget__content__link">{link}</Link>
     )
 }
 

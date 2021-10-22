@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../../assets/image/logo.png'
 
 function BotHeader() {
@@ -6,9 +7,9 @@ function BotHeader() {
             <div className="grid wide">
                 <div className="row botheader">
                     <div className="botheader__brand col xlg-3 lg-3 md-3 sm-12 xsm-12">
-                        <a href="">
+                        <Link to="/react-simen-demo/">
                             <img src={logo} alt="SNS Simen" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="col xlg-9 lg-9 md-9 sm-12 xsm-12">
                         <div className="row">

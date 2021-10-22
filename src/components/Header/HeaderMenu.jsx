@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import { useState, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { img7, img8, img9, img10, img11 } from '../../const/img';
 import ViewCart from './ViewCart.jsx';
 
@@ -497,7 +497,7 @@ function NavsubMenuItem(props) {
         <div className="navsub-menu__item">
             <div className="navsub-menu__item__title">
                 <NavLink 
-                    to={`/${isHomePage ? '' : title.toLowerCase()}`}
+                    to={`/react-simen-demo/${isHomePage ? '' : title.toLowerCase()}`}
                     exact={isHomePage}
                 >
                     {title}
@@ -551,7 +551,7 @@ function NavsubMenuChildren1Item(props) {
     return (
         <div className="navsub-menu__children-1__item">
             <div className="navsub-menu__children-1__title navsub-menu__item__title">
-                <a href="">{title1}</a>
+                <Link to='/react-simen-demo/no-content'>{title1}</Link>
                 {children2.length > 0 && <button 
                     className={classNames("btn__open-close", {'open': openChildId === id})}
                     onClick={handleClick}
@@ -572,7 +572,7 @@ function NavsubMenuChildren2Title(props) {
     const { title2 } = props
     return (
         <div className="navsub-menu__children-2__title navsub-menu__item__title">
-            <a href="">{title2}</a>
+            <Link to='/react-simen-demo/no-content'>{title2}</Link>
         </div>
     )
 }
@@ -1068,7 +1068,7 @@ function SubMenuItem({id, props}) {
     const isHomePage = name === 'HOME'
 
     return (
-        <NavLink to={`/${isHomePage ? '' : name.toLowerCase()}`}
+        <NavLink to={`/react-simen-demo/${isHomePage ? '' : name.toLowerCase()}`}
             exact={isHomePage}
             activeClassName="sub-menu__item--active"
             className={classNames(
@@ -1095,9 +1095,9 @@ function SubMenuItem({id, props}) {
                         }
                         {imageLink &&
                             <div className={classNames(colClass)}>
-                                <a href="" className='image-link'>
+                                <Link to='/react-simen-demo/no-content' className='image-link'>
                                     <img src={img11} alt=""/>
-                                </a>
+                                </Link>
                             </div>
                         }
                         {listImages && listImages.map(({id, img, title, content}) => {
@@ -1116,19 +1116,18 @@ function SubMenuItem({id, props}) {
 
 function SubMenuItemLink({name, isParent}) {
     return (
-        <a href="" 
-        // className="sub-menu__item__link sub-menu__item__link--parent"
-        className={classNames('sub-menu__item__link', {'sub-menu__item__link--parent': isParent})}
-    >
-        {name}
-    </a>
+        <span
+            className={classNames('sub-menu__item__link', {'sub-menu__item__link--parent': isParent})}
+        >
+            {name}
+        </span>
     )
 }
 
 function Col1Item({item}) {
     return (
         <li className="col-1__item">
-            <a href="" className="col-1__item__link">{item}</a>
+            <Link to='/react-simen-demo/no-content' className="col-1__item__link">{item}</Link>
         </li>
     )
 }
@@ -1147,10 +1146,10 @@ function TitleAndItems({title, items}) {
 function ImageContent({img, title, content}) {
     return (
         <>
-        <a href="" className="image">
+        <Link to='/react-simen-demo/no-content' className="image">
             <img src={img} alt=""/>
-        </a>
-        <a href="" className="title">{title}</a>
+        </Link>
+        <Link to='/react-simen-demo/no-content' className="title">{title}</Link>
         <span className="content">{content}</span>
         </>
     )
@@ -1159,7 +1158,7 @@ function ImageContent({img, title, content}) {
 function Item({item}) {
     return (
         <li className="item">
-            <a href="" className="link">{item}</a>
+            <Link to='/react-simen-demo/no-content' className="link">{item}</Link>
         </li>
     )
 }
