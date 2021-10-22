@@ -14,6 +14,7 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 import classNames from 'classnames';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../features/slice/cartSlice.js';
+import { Link } from 'react-router-dom';
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
 
@@ -91,9 +92,9 @@ const MostViewedCol = ({props}) => {
                     key={id}
                     className={classNames('products__most-viewed__col__item', {'products__most-viewed__col__item--sale': isSale})}
                 >
-                    <a href="">
+                    <Link to={`product/${id}`}>
                         <img src={img} alt=""/>
-                    </a>
+                    </Link>
                     <div className="products__most-viewed__col__item__content">
                         <a href="" className="product__name">{name}</a>
                         <div className="product__price">
