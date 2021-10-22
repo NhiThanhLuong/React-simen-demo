@@ -1,8 +1,7 @@
 import { 
     product1Img,product2Img,product3Img,product4Img,product5Img,product6Img,product7Img,product8Img,product9Img,product10Img,product11Img,product12Img,product13Img,product14Img,product15Img,
-    suggest1,suggest2,suggest3,suggest4,suggest5,suggest6,suggest7,suggest8,suggest9,
-    img1,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,
-    logo2Img,logo1Img,logo3Img,logo4Img,logo5Img,logo6Img,
+    suggest1,suggest9,
+    img15,img16,img17,img18,
 } from "./img.js"
 
 const products = [
