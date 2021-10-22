@@ -1,0 +1,40 @@
+.not-found {
+    .error-404 {
+        display: block;
+        font-size: 10rem;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+    }
+    .error-infor {
+        display: block;
+        font-size: 8rem;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+    }
+    .error-detail {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .link-home {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        padding: 10px;
+
+        background-color: #333;
+        color: #fff;
+        
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+        &:hover {
+            background-color: #e34444;
+        }
+    }
+}

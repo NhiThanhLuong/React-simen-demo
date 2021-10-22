@@ -49,9 +49,8 @@
 
         border: solid transparent;
         pointer-events: none;
-        transition: all 0.2s;
-        -webkit-transition: all 0.2s;
-        // @include hidden;
+        transition: all 0.4s ease-in;
+        @include hidden;
     }
     &::after {
         border-color: rgba(255, 255, 255, 0);
@@ -67,10 +66,16 @@
         margin-left: -2px;
     }
     &:hover {
+        @include show;
         .view-cart {
             @include show;
         }
     }
+    &:hover::before,
+    &:hover::after {
+        @include show;
+    }
+
 }
 
 .item-container {

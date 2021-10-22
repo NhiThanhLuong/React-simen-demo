@@ -1,11 +1,7 @@
 import classNames from 'classnames/bind';
 import { useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import img7 from '../../assets/image/img7.png'
-import img8 from '../../assets/image/img8.jpg'
-import img9 from '../../assets/image/img9.jpg'
-import img10 from '../../assets/image/img10.jpg'
-import img11 from '../../assets/image/img11.png'
+import { img7, img8, img9, img10, img11 } from '../../const/img';
 import ViewCart from './ViewCart.jsx';
 
 function HeaderMenu() {
@@ -475,6 +471,7 @@ function MenuButtonMobile() {
 
 function NavsubMenuItem(props) {
     const { id, title, children1, openId, setOpenId } = props
+    const isHomePage = title.toUpperCase() === 'HOME'
     const [openChildId, setOpenChildId] = useState(0)
     
     const menuChildren1 = useRef(null)
@@ -499,7 +496,12 @@ function NavsubMenuItem(props) {
     return (
         <div className="navsub-menu__item">
             <div className="navsub-menu__item__title">
-                <a href="">{title}</a>
+                <NavLink 
+                    to={`/${isHomePage ? '' : title.toLowerCase()}`}
+                    exact={isHomePage}
+                >
+                    {title}
+                </NavLink>
                 {children1.length > 0 && 
                     <button 
                         className={classNames("btn__open-close", {'open': openId === id})} 

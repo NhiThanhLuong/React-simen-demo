@@ -1,4 +1,5 @@
 import furnitureCoverImg from '../assets/image/furniture.png'
+import sofasCoverImg from '../assets/image/sofas.png'
 
 import product1Img from "../assets/image/product1.jpg"
 import product2Img from "../assets/image/product2.jpg"
@@ -27,6 +28,11 @@ import suggest8 from '../assets/image/suggest8.jpg'
 import suggest9 from '../assets/image/suggest9.jpg'
 
 import img1 from '../assets/image/img1.png'
+import img7 from '../assets/image/img7.png'
+import img8 from '../assets/image/img8.jpg'
+import img9 from '../assets/image/img9.jpg'
+import img10 from '../assets/image/img10.jpg'
+import img11 from '../assets/image/img11.png'
 import img12 from '../assets/image/img12.jpg'
 import img13 from '../assets/image/img13.jpg'
 import img14 from '../assets/image/img14.jpg'
@@ -47,6 +53,7 @@ import logo6Img from '../assets/image/logo6.png'
 
 export {
     furnitureCoverImg,
+    sofasCoverImg,
 
     product1Img,
     product2Img,
@@ -75,6 +82,11 @@ export {
     suggest9,
 
     img1,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
     img12,
     img13,
     img14,

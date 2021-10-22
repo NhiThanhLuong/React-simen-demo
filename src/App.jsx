@@ -1,45 +1,58 @@
 import { Switch, Route, Link } from 'react-router-dom';
+import BackToTop from "react-back-to-top-button";
 import './assets/css/base.css';
 import './assets/css/style.scss';
 import './assets/css/grid.css';
 import './assets/css/responsive.scss';
 import './assets/fonts/fontawesome-free-5.15.3/css/all.min.css'
 import './App.css'
+
 import Header from './components/Header.jsx'
 import Container from './components/Container.jsx'
 import Footer from './components/Footer.jsx'
-import ProductItem from './pages/ProductItem.jsx';
+import DonorLogo from './components/Container/DonorLogo';
+
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+
 import Furniture from './pages/Furniture';
+import ProductItem from './pages/ProductItem.jsx';
+import CoffeeTables from './pages/CoffeeTables';
 import Sofas from './pages/Sofas';
+import NotFound from './pages/NotFound';
+
 
 function App() {
   return (
     <div className="app">
         <ToastContainer/>
+        <Header/>
       <Switch>
         <Route exact path="/">
-          <Header/>
           <Container/>
         </Route>
         <Route path="/product/:id">
-          <Header/>
           <ProductItem/>
         </Route>
         <Route path="/furniture">
-          <Header/>
           <Furniture/>
         </Route>
         <Route path="/coffee tables">
-          <Header/>
+          <CoffeeTables />
         </Route>
         <Route path="/sofas">
-          <Header/>
           <Sofas />
         </Route>
+        <Route path="*" component={NotFound} />
       </Switch>
+      <DonorLogo/>
       <Footer/>
+      <BackToTop
+        showAt={100}
+        speed={500}
+      >
+        <i class="fa fa-angle-up"/>
+      </BackToTop>
     </div>
   );
 }

@@ -4,13 +4,11 @@ import NewProduct from "./Container/NewProduct.jsx"
 import AdversImages from "./Container/AdversImages.jsx"
 import MostViewed from "./Container/MostViewed.jsx"
 import LatestPost from "./Container/LatestPost.jsx"
-import DonorLogo from "./Container/DonorLogo.jsx"
 
 import { 
     product1Img,product2Img,product3Img,product4Img,product5Img,product6Img,product7Img,product8Img,product9Img,product10Img,product11Img,product12Img,product13Img,product14Img,product15Img,
     suggest1,suggest2,suggest3,suggest4,suggest5,suggest6,suggest7,suggest8,suggest9,
     img1,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,
-    logo2Img,logo1Img,logo3Img,logo4Img,logo5Img,logo6Img,
 } from "../const/img.js"
 
 
@@ -384,14 +382,7 @@ const Container = () => {
         },
     ]
 
-    const donorlogos = [
-        { id: 1, img: logo1Img},
-        { id: 2, img: logo2Img},
-        { id: 3, img: logo3Img},
-        { id: 4, img: logo4Img},
-        { id: 5, img: logo5Img},
-        { id: 6, img: logo6Img},
-    ]
+    
 
     return (
         <div className="container">
@@ -406,7 +397,6 @@ const Container = () => {
                     <AdversImages imgs={adversImages}/>
                     <MostViewed props={productMostViewed}/>
                     <LatestPost props={productLatestPost}/>
-                    <DonorLogo props={donorlogos}/>
                 </Products>
             </div>
         </div>

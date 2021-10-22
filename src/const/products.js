@@ -14,7 +14,7 @@ const products = [
         oldPrice: 9.00,
         newPrice: 7.00,
         rating: 0,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const products = [
         oldPrice: '',
         newPrice: 10.00,
         rating: 3.5,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ const products = [
         oldPrice: 3.00,
         newPrice: 2.00,
         rating: 2,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ const products = [
         oldPrice: '',
         newPrice: 13.00,
         rating: 3,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 5,
@@ -54,7 +54,7 @@ const products = [
         oldPrice: '',
         newPrice: 14.00,
         rating: 3,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 6,
@@ -64,7 +64,7 @@ const products = [
         oldPrice: '',
         newPrice: 15.00,
         rating: 0,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 7,
@@ -154,7 +154,7 @@ const products = [
         oldPrice: '',
         newPrice: 15.00,
         rating: 3,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 16,
@@ -164,7 +164,7 @@ const products = [
         oldPrice: 9.00,
         newPrice: 7.00,
         rating: 3.5,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 17,
@@ -174,7 +174,7 @@ const products = [
         oldPrice: 9.00,
         newPrice: 8.00,
         rating: 5,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 18,
@@ -184,7 +184,7 @@ const products = [
         oldPrice: '',
         newPrice: 9.00,
         rating: 0,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 19,
@@ -194,7 +194,7 @@ const products = [
         oldPrice: '',
         newPrice: 9.00,
         rating: 3,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 20,
@@ -204,7 +204,7 @@ const products = [
         oldPrice: '',
         newPrice: 9.00,
         rating: 0,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 21,
@@ -214,7 +214,7 @@ const products = [
         oldPrice: '',
         newPrice: 9.00,
         rating: 0,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 22,
@@ -224,7 +224,7 @@ const products = [
         oldPrice: '',
         newPrice: 15.00,
         rating: 0,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 23,
@@ -234,7 +234,7 @@ const products = [
         oldPrice: 9.00,
         newPrice: 15.00,
         rating: 4,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 24,
@@ -244,7 +244,7 @@ const products = [
         oldPrice: 15.00,
         newPrice: 12.00,
         rating: 2,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
     {
         id: 25,
@@ -254,7 +254,7 @@ const products = [
         oldPrice: 15.00,
         newPrice: 12.00,
         rating: 4,
-        categorys: [],
+        categorys: ['Coffee Tables'],
     },
 ]
 

@@ -11,7 +11,7 @@ const ProductItemList = ({product}) => {
         <div className={classNames('product', {'product--sale': isSale})}>
             <div className="product-img-info product--list">
                 <div className="row">
-                    <div className="col xlg-3">
+                    <div className="col xlg-3 lg-3 md-3 sm-12 xsm-12">
                         <Link to={`product/${id}`}  className="product__link">
                             <img src={img} className="product__img" alt=""/>
                             <div className="product__sale">
@@ -19,7 +19,7 @@ const ProductItemList = ({product}) => {
                             </div>
                         </Link>
                     </div>
-                    <div className="col xlg-9">
+                    <div className="col xlg-9 lg-9 md-9 sm-12 xsm-12">
                         <div className="infor--wrap">
                             <span className="infor--wrap__name">{name}</span>
                             <div className="infor--wrap__price">

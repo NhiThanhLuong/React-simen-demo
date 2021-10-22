@@ -4,6 +4,7 @@ import './productItem.scss'
 import {useState} from 'react'
 import { useParams } from "react-router"
 import ProductRating from "../components/Container/ProductRating.jsx"
+import NotFound from './NotFound'
 import { useDispatch } from "react-redux"
 import { addQuantityItem } from "../features/slice/cartSlice"
 
@@ -59,7 +60,7 @@ const ProductItem = () => {
             )
     }
     return (
-        <h1>abc</h1>
+        <NotFound/>
     )
 
 }
