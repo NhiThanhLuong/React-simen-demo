@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-simen-demo/static/css/main.54ff7076.chunk.css",
-    "main.js": "/React-simen-demo/static/js/main.fbf0e5ca.chunk.js",
-    "main.js.map": "/React-simen-demo/static/js/main.fbf0e5ca.chunk.js.map",
+    "main.js": "/React-simen-demo/static/js/main.25437db2.chunk.js",
+    "main.js.map": "/React-simen-demo/static/js/main.25437db2.chunk.js.map",
     "runtime-main.js": "/React-simen-demo/static/js/runtime-main.a9cb352d.js",
     "runtime-main.js.map": "/React-simen-demo/static/js/runtime-main.a9cb352d.js.map",
     "static/css/2.773f1b95.chunk.css": "/React-simen-demo/static/css/2.773f1b95.chunk.css",
@@ -35,6 +35,6 @@
     "static/css/2.773f1b95.chunk.css",
     "static/js/2.2b5dffbe.chunk.js",
     "static/css/main.54ff7076.chunk.css",
-    "static/js/main.fbf0e5ca.chunk.js"
+    "static/js/main.25437db2.chunk.js"
   ]
 }
