@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/React-simen-demo/static/css/main.7737c0e5.chunk.css",
+    "main.js": "/React-simen-demo/static/js/main.54509e04.chunk.js",
+    "main.js.map": "/React-simen-demo/static/js/main.54509e04.chunk.js.map",
+    "runtime-main.js": "/React-simen-demo/static/js/runtime-main.a9cb352d.js",
+    "runtime-main.js.map": "/React-simen-demo/static/js/runtime-main.a9cb352d.js.map",
+    "static/css/2.773f1b95.chunk.css": "/React-simen-demo/static/css/2.773f1b95.chunk.css",
+    "static/js/2.2b5dffbe.chunk.js": "/React-simen-demo/static/js/2.2b5dffbe.chunk.js",
+    "static/js/2.2b5dffbe.chunk.js.map": "/React-simen-demo/static/js/2.2b5dffbe.chunk.js.map",
+    "static/js/3.d6a20a56.chunk.js": "/React-simen-demo/static/js/3.d6a20a56.chunk.js",
+    "static/js/3.d6a20a56.chunk.js.map": "/React-simen-demo/static/js/3.d6a20a56.chunk.js.map",
+    "index.html": "/React-simen-demo/index.html",
+    "static/css/2.773f1b95.chunk.css.map": "/React-simen-demo/static/css/2.773f1b95.chunk.css.map",
+    "static/css/main.7737c0e5.chunk.css.map": "/React-simen-demo/static/css/main.7737c0e5.chunk.css.map",
+    "static/js/2.2b5dffbe.chunk.js.LICENSE.txt": "/React-simen-demo/static/js/2.2b5dffbe.chunk.js.LICENSE.txt",
+    "static/media/all.min.css": "/React-simen-demo/static/media/fa-solid-900.efbd5d20.eot",
+    "static/media/furniture.fe5a3b6e.png": "/React-simen-demo/static/media/furniture.fe5a3b6e.png",
+    "static/media/img1.82270b12.png": "/React-simen-demo/static/media/img1.82270b12.png",
+    "static/media/img10.cb7b88ce.jpg": "/React-simen-demo/static/media/img10.cb7b88ce.jpg",
+    "static/media/img11.6bf80399.png": "/React-simen-demo/static/media/img11.6bf80399.png",
+    "static/media/img12.384d8df0.jpg": "/React-simen-demo/static/media/img12.384d8df0.jpg",
+    "static/media/img13.56904f0a.jpg": "/React-simen-demo/static/media/img13.56904f0a.jpg",
+    "static/media/img14.f87b7bfa.jpg": "/React-simen-demo/static/media/img14.f87b7bfa.jpg",
+    "static/media/img19.e559011b.jpg": "/React-simen-demo/static/media/img19.e559011b.jpg",
+    "static/media/img20.74a55393.jpg": "/React-simen-demo/static/media/img20.74a55393.jpg",
+    "static/media/img21.310b9ab6.jpg": "/React-simen-demo/static/media/img21.310b9ab6.jpg",
+    "static/media/style.scss": "/React-simen-demo/static/media/img6.43206268.png",
+    "static/media/img7.7c6b138e.png": "/React-simen-demo/static/media/img7.7c6b138e.png",
+    "static/media/new-product1.9d329236.jpg": "/React-simen-demo/static/media/new-product1.9d329236.jpg",
+    "static/media/sofas.f835698c.png": "/React-simen-demo/static/media/sofas.f835698c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9cb352d.js",
+    "static/css/2.773f1b95.chunk.css",
+    "static/js/2.2b5dffbe.chunk.js",
+    "static/css/main.7737c0e5.chunk.css",
+    "static/js/main.54509e04.chunk.js"
+  ]
+}
