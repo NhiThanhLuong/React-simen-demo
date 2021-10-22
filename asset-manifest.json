@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/React-simen-demo/static/css/main.54ff7076.chunk.css",
-    "main.js": "/React-simen-demo/static/js/main.25437db2.chunk.js",
-    "main.js.map": "/React-simen-demo/static/js/main.25437db2.chunk.js.map",
-    "runtime-main.js": "/React-simen-demo/static/js/runtime-main.a9cb352d.js",
-    "runtime-main.js.map": "/React-simen-demo/static/js/runtime-main.a9cb352d.js.map",
+    "main.css": "/React-simen-demo/static/css/main.aebf76a3.chunk.css",
+    "main.js": "/React-simen-demo/static/js/main.1e10df9b.chunk.js",
+    "main.js.map": "/React-simen-demo/static/js/main.1e10df9b.chunk.js.map",
+    "runtime-main.js": "/React-simen-demo/static/js/runtime-main.7249de4c.js",
+    "runtime-main.js.map": "/React-simen-demo/static/js/runtime-main.7249de4c.js.map",
     "static/css/2.773f1b95.chunk.css": "/React-simen-demo/static/css/2.773f1b95.chunk.css",
-    "static/js/2.2b5dffbe.chunk.js": "/React-simen-demo/static/js/2.2b5dffbe.chunk.js",
-    "static/js/2.2b5dffbe.chunk.js.map": "/React-simen-demo/static/js/2.2b5dffbe.chunk.js.map",
-    "static/js/3.d6a20a56.chunk.js": "/React-simen-demo/static/js/3.d6a20a56.chunk.js",
-    "static/js/3.d6a20a56.chunk.js.map": "/React-simen-demo/static/js/3.d6a20a56.chunk.js.map",
+    "static/js/2.8cadc8be.chunk.js": "/React-simen-demo/static/js/2.8cadc8be.chunk.js",
+    "static/js/2.8cadc8be.chunk.js.map": "/React-simen-demo/static/js/2.8cadc8be.chunk.js.map",
+    "static/js/3.b5d40741.chunk.js": "/React-simen-demo/static/js/3.b5d40741.chunk.js",
+    "static/js/3.b5d40741.chunk.js.map": "/React-simen-demo/static/js/3.b5d40741.chunk.js.map",
     "index.html": "/React-simen-demo/index.html",
     "static/css/2.773f1b95.chunk.css.map": "/React-simen-demo/static/css/2.773f1b95.chunk.css.map",
-    "static/css/main.54ff7076.chunk.css.map": "/React-simen-demo/static/css/main.54ff7076.chunk.css.map",
-    "static/js/2.2b5dffbe.chunk.js.LICENSE.txt": "/React-simen-demo/static/js/2.2b5dffbe.chunk.js.LICENSE.txt",
+    "static/css/main.aebf76a3.chunk.css.map": "/React-simen-demo/static/css/main.aebf76a3.chunk.css.map",
+    "static/js/2.8cadc8be.chunk.js.LICENSE.txt": "/React-simen-demo/static/js/2.8cadc8be.chunk.js.LICENSE.txt",
     "static/media/all.min.css": "/React-simen-demo/static/media/fa-solid-900.efbd5d20.eot",
     "static/media/furniture.fe5a3b6e.png": "/React-simen-demo/static/media/furniture.fe5a3b6e.png",
     "static/media/img1.82270b12.png": "/React-simen-demo/static/media/img1.82270b12.png",
@@ -31,10 +31,10 @@
     "static/media/sofas.f835698c.png": "/React-simen-demo/static/media/sofas.f835698c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9cb352d.js",
+    "static/js/runtime-main.7249de4c.js",
     "static/css/2.773f1b95.chunk.css",
-    "static/js/2.2b5dffbe.chunk.js",
-    "static/css/main.54ff7076.chunk.css",
-    "static/js/main.25437db2.chunk.js"
+    "static/js/2.8cadc8be.chunk.js",
+    "static/css/main.aebf76a3.chunk.css",
+    "static/js/main.1e10df9b.chunk.js"
   ]
 }
