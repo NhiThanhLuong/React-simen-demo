@@ -31,10 +31,6 @@ function App() {
         <Route exact path="/">
           <Container/>
         </Route>
-        <Route path='/react-simen-demo' component={() => { 
-            window.location.href = '/'; 
-            return null;
-        }}/>
         <Route path="/product/:id">
           <ProductItem/>
         </Route>
