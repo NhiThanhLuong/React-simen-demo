@@ -7,7 +7,7 @@ const NotFound = () => (
             <span className='error-404'>404</span>
             <span className='error-infor'>OPPS, PAGE NOT FOUND</span>
             <span className='error-detail'>Sorry,an error has occured. Request Page Not Found.</span>
-            <Link to="/react-simen-demo/" className="link-home">
+            <Link to="/React-simen-demo" className="link-home">
                 Go Home
             </Link>
         </div>

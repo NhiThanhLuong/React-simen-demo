@@ -7,7 +7,7 @@ function BotHeader() {
             <div className="grid wide">
                 <div className="row botheader">
                     <div className="botheader__brand col xlg-3 lg-3 md-3 sm-12 xsm-12">
-                        <Link to="/react-simen-demo/">
+                        <Link to="/React-simen-demo">
                             <img src={logo} alt="SNS Simen" />
                         </Link>
                     </div>

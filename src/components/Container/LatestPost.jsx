@@ -76,7 +76,7 @@ const LatestPostItem = ({props}) => {
     const {img, date, month, author, title, excerpt} = props
     return (
         <div className="products__lastest-posts__item col">
-            <Link to='/react-simen-demo/no-content' className="products__lastest-posts__item__img img-effect-hover-1">
+            <Link to='/React-simen-demo/no-content' className="products__lastest-posts__item__img img-effect-hover-1">
                 <img src={img} alt=""/>
             </Link>
             <div className="products__lastest-posts__item__infor">
@@ -85,8 +85,8 @@ const LatestPostItem = ({props}) => {
                     <div className="date-month__month">{month}</div>
                 </div>
                 <div className="products__lastest-posts__item__content">
-                    <Link to='/react-simen-demo/no-content' className="author">{author}</Link>
-                    <Link to='/react-simen-demo/no-content' className="title">{title}</Link>
+                    <Link to='/React-simen-demo/no-content' className="author">{author}</Link>
+                    <Link to='/React-simen-demo/no-content' className="title">{title}</Link>
                     <div className="excerpt">{excerpt}</div>
                 </div>
             </div>

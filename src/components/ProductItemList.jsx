@@ -12,7 +12,7 @@ const ProductItemList = ({product}) => {
             <div className="product-img-info product--list">
                 <div className="row">
                     <div className="col xlg-3 lg-3 md-3 sm-12 xsm-12">
-                        <Link to={`/react-simen-demo/product/${id}`}  className="product__link">
+                        <Link to={`/React-simen-demo/product/${id}`}  className="product__link">
                             <img src={img} className="product__img" alt=""/>
                             <div className="product__sale">
                                 SALE!

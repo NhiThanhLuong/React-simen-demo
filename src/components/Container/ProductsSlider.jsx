@@ -31,8 +31,7 @@ const ProductsSlider = ({products}) => {
     const h = ref.current.offsetHeight/2
     prevButton.current.style.top = `${h}px`
     nextButton.current.style.top = `${h}px`
-    console.log(ref.current);
-  }, []);
+  }, [ref.current]);
 
     return (
           <div className="row">

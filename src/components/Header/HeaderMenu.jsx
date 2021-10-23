@@ -461,7 +461,7 @@ function MenuButtonMobile() {
             >
                 <div className="navsub-menu">
                     {navsubMenu.map(({ id, title, children1 }) => 
-                        <NavsubMenuItem key={id} openId={openId} setOpenId={setOpenId} id={id} title = {title} children1={children1}/>)
+                        <NavsubMenuItem key={id} onClick={() => setShow(false)} openId={openId} setOpenId={setOpenId} id={id} title = {title} children1={children1}/>)
                     }
                 </div>
             </div>
@@ -470,7 +470,7 @@ function MenuButtonMobile() {
 }
 
 function NavsubMenuItem(props) {
-    const { id, title, children1, openId, setOpenId } = props
+    const { id, title, children1, openId, setOpenId, onClick } = props
     const isHomePage = title.toUpperCase() === 'HOME'
     const [openChildId, setOpenChildId] = useState(0)
     
@@ -497,8 +497,9 @@ function NavsubMenuItem(props) {
         <div className="navsub-menu__item">
             <div className="navsub-menu__item__title">
                 <NavLink 
-                    to={`/react-simen-demo/${isHomePage ? '' : title.toLowerCase()}`}
+                    to={`/React-simen-demo${isHomePage ? '' : '/' + title.toLowerCase()}`}
                     exact={isHomePage}
+                    onClick={onClick}
                 >
                     {title}
                 </NavLink>
@@ -551,7 +552,7 @@ function NavsubMenuChildren1Item(props) {
     return (
         <div className="navsub-menu__children-1__item">
             <div className="navsub-menu__children-1__title navsub-menu__item__title">
-                <Link to='/react-simen-demo/no-content'>{title1}</Link>
+                <Link to='/React-simen-demo/no-content'>{title1}</Link>
                 {children2.length > 0 && <button 
                     className={classNames("btn__open-close", {'open': openChildId === id})}
                     onClick={handleClick}
@@ -572,7 +573,7 @@ function NavsubMenuChildren2Title(props) {
     const { title2 } = props
     return (
         <div className="navsub-menu__children-2__title navsub-menu__item__title">
-            <Link to='/react-simen-demo/no-content'>{title2}</Link>
+            <Link to='/React-simen-demo/no-content'>{title2}</Link>
         </div>
     )
 }
@@ -1068,7 +1069,7 @@ function SubMenuItem({id, props}) {
     const isHomePage = name === 'HOME'
 
     return (
-        <NavLink to={`/react-simen-demo/${isHomePage ? '' : name.toLowerCase()}`}
+        <NavLink to={`/React-simen-demo${isHomePage ? '' : '/' + name.toLowerCase()}`}
             exact={isHomePage}
             activeClassName="sub-menu__item--active"
             className={classNames(
@@ -1095,7 +1096,7 @@ function SubMenuItem({id, props}) {
                         }
                         {imageLink &&
                             <div className={classNames(colClass)}>
-                                <Link to='/react-simen-demo/no-content' className='image-link'>
+                                <Link to='/React-simen-demo/no-content' className='image-link'>
                                     <img src={img11} alt=""/>
                                 </Link>
                             </div>
@@ -1127,7 +1128,7 @@ function SubMenuItemLink({name, isParent}) {
 function Col1Item({item}) {
     return (
         <li className="col-1__item">
-            <Link to='/react-simen-demo/no-content' className="col-1__item__link">{item}</Link>
+            <Link to='/React-simen-demo/no-content' className="col-1__item__link">{item}</Link>
         </li>
     )
 }
@@ -1146,10 +1147,10 @@ function TitleAndItems({title, items}) {
 function ImageContent({img, title, content}) {
     return (
         <>
-        <Link to='/react-simen-demo/no-content' className="image">
+        <Link to='/React-simen-demo/no-content' className="image">
             <img src={img} alt=""/>
         </Link>
-        <Link to='/react-simen-demo/no-content' className="title">{title}</Link>
+        <Link to='/React-simen-demo/no-content' className="title">{title}</Link>
         <span className="content">{content}</span>
         </>
     )
@@ -1158,7 +1159,7 @@ function ImageContent({img, title, content}) {
 function Item({item}) {
     return (
         <li className="item">
-            <Link to='/react-simen-demo/no-content' className="link">{item}</Link>
+            <Link to='/React-simen-demo/no-content' className="link">{item}</Link>
         </li>
     )
 }

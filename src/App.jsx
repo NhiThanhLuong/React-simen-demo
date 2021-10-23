@@ -28,19 +28,19 @@ function App() {
         <ToastContainer/>
         <Header/>
       <Switch>
-        <Route exact path="/react-simen-demo/">
+        <Route exact path="/React-simen-demo">
           <Container/>
         </Route>
-        <Route path="/react-simen-demo/product/:id">
+        <Route path="/React-simen-demo/product/:id">
           <ProductItem/>
         </Route>
-        <Route path="/react-simen-demo/furniture">
+        <Route path="/React-simen-demo/furniture">
           <Furniture/>
         </Route>
-        <Route path="/react-simen-demo/coffee tables">
+        <Route path="/React-simen-demo/coffee tables">
           <CoffeeTables />
         </Route>
-        <Route path="/react-simen-demo/sofas">
+        <Route path="/React-simen-demo/sofas">
           <Sofas />
         </Route>
         <Route path="*" component={NotFound} />

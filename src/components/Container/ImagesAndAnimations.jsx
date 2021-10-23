@@ -101,17 +101,17 @@ const ContentBoxLeft = () => {
 const ContentBoxRight = () => {
     return (
         <div className="content-box-right col xlg-6 lg-6 md-6 sm-12 xsm-12">
-            <Link to='/react-simen-demo/adv' className="content-box-right__top img-effect-hover-1">
+            <Link to='/React-simen-demo/adv' className="content-box-right__top img-effect-hover-1">
                 <img src={img1} alt="" className="content-box-right__top__img"/>
             </Link>
             <div className="row content-box-right__bot">
                 <div className="col xlg-6 lg-6 md-6 sm-6 xsm-6">
-                    <Link to='/react-simen-demo/adv' className="content-box-right__bot__left img-effect-hover-2">
+                    <Link to='/React-simen-demo/adv' className="content-box-right__bot__left img-effect-hover-2">
                         <img src={img2} alt="" className="content-box-right__bot__left__img"/>
                     </Link>
                 </div>
                 <div className="col xlg-6 lg-6 md-6 sm-6 xsm-6">
-                    <Link to='/react-simen-demo/adv' className="content-box-right__bot__right img-effect-hover-3">
+                    <Link to='/React-simen-demo/adv' className="content-box-right__bot__right img-effect-hover-3">
                         <img src={img3} alt="" className="content-box-right__bot__right__img"/>
                     </Link>
                 </div>

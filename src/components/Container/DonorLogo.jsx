@@ -68,7 +68,7 @@ const DonorLogo = () => {
                     >
                         {donorlogos.map(({id, img}) => (
                             <SwiperSlide key={id}>
-                                <Link to='/react-simen-demo/logo' className="donor-logo__item col">
+                                <Link to='/React-simen-demo/logo' className="donor-logo__item col">
                                     <img src={img} alt=""/>
                                 </Link>
                             </SwiperSlide>

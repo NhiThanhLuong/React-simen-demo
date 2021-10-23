@@ -92,11 +92,11 @@ const MostViewedCol = ({props}) => {
                     key={id}
                     className={classNames('products__most-viewed__col__item', {'products__most-viewed__col__item--sale': isSale})}
                 >
-                    <Link to={`/react-simen-demo/product/${id}`}>
+                    <Link to={`/React-simen-demo/product/${id}`}>
                         <img src={img} alt=""/>
                     </Link>
                     <div className="products__most-viewed__col__item__content">
-                        <Link to={`/react-simen-demo/product/${id}`} className="product__name">{name}</Link>
+                        <Link to={`/React-simen-demo/product/${id}`} className="product__name">{name}</Link>
                         <div className="product__price">
                             {isSale && <span className="old-price">$ {oldPrice.toFixed(2)}</span>}
                             <span className="new-price">$ {newPrice.toFixed(2)}</span>
