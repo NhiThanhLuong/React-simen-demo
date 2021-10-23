@@ -51,7 +51,7 @@ function App() {
         showAt={100}
         speed={500}
       >
-        <i class="fa fa-angle-up"/>
+        <i className="fa fa-angle-up"/>
       </BackToTop>
     </div>
   );

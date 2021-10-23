@@ -1,6 +1,6 @@
 import classNames from "classnames"
 import './navbarPage.scss'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PriceFilter from '../components/PriceFilter';
 import ProductsGrid from '../components/ProductsGrid';
 import ProductsList from '../components/ProductsList';
@@ -10,7 +10,7 @@ import NoProduct from "../components/page/NoProduct";
 const NavbarPage = ({namePage, products, imgCover}) => {
     const [price, setPrice] = useState([1,500])
     const [option, setOption] = useState('Default sorting')
-    const [productsFilter, setProductsFilter] = useState(products)
+    const [productsFilter, setProductsFilter] = useState([...products])
     const [listSort, setListSort] = useState(true)
     let sortProducts
 
@@ -27,9 +27,13 @@ const NavbarPage = ({namePage, products, imgCover}) => {
         default:
     }
 
+    useEffect(() => {
+        handleClick()
+    }, [option])
+
     const handleClick = () => {
-        const filter = sortProducts.filter(({newPrice}) => newPrice >= price[0] && newPrice <= price[1])
-        setProductsFilter(filter)
+        sortProducts = sortProducts.filter(({newPrice}) => newPrice >= price[0] && newPrice <= price[1])
+        setProductsFilter(sortProducts)
     }
 
     return (
@@ -57,13 +61,13 @@ const NavbarPage = ({namePage, products, imgCover}) => {
                                         className={classNames('sort-item', {'sort-item--selected': listSort})} 
                                         onClick={() => setListSort(true)}
                                     >
-                                        <i class="fas fa-th"/>
+                                        <i className="fas fa-th"/>
                                     </div>
                                     <div 
                                         className={classNames('sort-item', {'sort-item--selected': !listSort})} 
                                         onClick={() => setListSort(false)}
                                     >
-                                        <i class="fas fa-list"/>
+                                        <i className="fas fa-list"/>
                                     </div>
                                 </div>
                                 <div className="option-sort">
