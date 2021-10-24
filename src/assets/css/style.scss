@@ -951,6 +951,12 @@ $topheader-height: 40px;
         }
         background-color: #f8f8f6;
         &__widget {
+            @media (max-width: 739px) {
+                text-align: center;
+                .infor {
+                    justify-content: center;
+                }
+            }
             padding: 50px 0;
             font-size: 1.2rem;
             color: #000;
@@ -976,6 +982,12 @@ $topheader-height: 40px;
                     }
                     .infor__text {
                         a {
+                            display: block;
+                            &:hover {
+                                color: #e34444;
+                            }
+                        }
+                        span {
                             display: block;
                             &:hover {
                                 color: #e34444;
@@ -1228,6 +1240,8 @@ $topheader-height: 40px;
     position: fixed;
     bottom: 10px;
     right: 10px;
+    z-index: 15;
+
     height: 50px;
     width: 50px;
     border-radius: 100%;
