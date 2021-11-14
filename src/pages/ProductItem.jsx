@@ -16,7 +16,7 @@ const ProductItem = () => {
     const [input, setInput] = useState(1)
     const dispatch = useDispatch()
     const {id} = useParams()
-    const productItem = products.find(item => item.id == id)
+    const productItem = products.find(item => `${item.id}` === id)
     if (productItem) {
         const {isSale, img, name, oldPrice, newPrice, rating} = productItem
         const handleClick = () => {

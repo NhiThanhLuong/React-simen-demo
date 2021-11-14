@@ -18,24 +18,21 @@ const ImagesAndAnimations = () => {
 }
 
 const ContentBoxLeft = () => {
-    // state
     const [bulletIndex, setBulletIndex] = useState(0)
-    //constant
+
     const numberBullet = [...Array(3).keys()]
     const numberImagesSplit = [...Array(5).keys()]
-    // Ref
+
     const refs = useRef([...new Array(3)].map(() => [...new Array(numberImagesSplit.length)].map(() => createRef())))
 
     const trail = useTrail(5, {
         from: { opacity: 0, transform: 'translateY(-100vh)' },
         to: { opacity: 1, transform: 'translateY(0)' },
-        // loop: true,
         reset: true,
 
       });
 
     useEffect(() => {
-        // Side effect
         const interval = setInterval(() => setBulletIndex(bulletIndex => (bulletIndex + 1 ) % numberBullet.length), 5000)
         numberBullet.forEach(index => {
             const w = refs.current[index][0].current.offsetWidth
@@ -45,8 +42,8 @@ const ContentBoxLeft = () => {
                 ImageItemNodeId.style.left = `${(w - 1) * id}px`
             });
         })
-        // Clean up
         return () => clearInterval(interval)
+        // eslint-disable-next-line
     },[])
 
     // Animation when change BulletIndex
@@ -61,7 +58,7 @@ const ContentBoxLeft = () => {
                 }
             });
         })
-    },[bulletIndex, numberBullet, numberImagesSplit])
+    },[bulletIndex])
 
     const handleClick = id => setBulletIndex(id)
 

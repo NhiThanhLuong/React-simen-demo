@@ -14,6 +14,11 @@
     visibility: visible;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 $topheader-height: 40px;
 .app {
     .header {
@@ -190,10 +195,7 @@ $topheader-height: 40px;
                 border-top: 1px dotted #000;
                 border-bottom: 1px dotted #000;
                 .sub-menu {
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                    }
+                    
                     z-index: 10;
                     @include reset-list;
                     height: 100%;
@@ -217,18 +219,22 @@ $topheader-height: 40px;
                                 @include show;
                             }
                         }
-                        &--active {
-                            .sub-menu__item__link {
-                                cursor: inherit;
-                                color: #e34444;
-                            }
-                        }
+                        // &--active {
+                        //     .sub-menu__item__link {
+                        //         cursor: inherit;
+                        //         color: #e34444;
+                        //     }
+                        // }
                         &__link {
                             position: relative;
                             display: block;
                             color: #333;
                             font-weight: 700;
                             line-height: 50px;
+                            &--active {
+                                cursor: inherit;
+                                color: #e34444; 
+                            }
                             &--parent {
                                 &::before,
                                 &::after {
@@ -258,6 +264,7 @@ $topheader-height: 40px;
                                     margin-left: -11px;
                                 }
                             }
+                            
                         }
                         &__children {
                             @include reset-list;

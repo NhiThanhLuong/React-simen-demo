@@ -1069,18 +1069,26 @@ function SubMenuItem({id, props}) {
     const isHomePage = name === 'HOME'
 
     return (
-        <NavLink to={`/React-simen-demo${isHomePage ? '' : '/' + name.toLowerCase()}`}
-            exact={isHomePage}
-            activeClassName="sub-menu__item--active"
+        <div 
             className={classNames(
             'sub-menu__item', 
             {'sub-menu__item--static': list || listImages}, 
             )}
         >
-            <SubMenuItemLink name={name} isParent={isParent}/>
+            <NavLink to={`/React-simen-demo${isHomePage ? '' : '/' + name.toLowerCase()}`}
+                exact={isHomePage}
+                activeClassName="sub-menu__item__link--active"
+                className={classNames('sub-menu__item__link', {'sub-menu__item__link--parent': isParent})}
+            >
+                {name}
+            </NavLink>
             {items.length > 0 && 
                 <ul className="sub-menu__item__children sub-menu__item__children--col-1">
-                    {items.map(({id, item}) => <Col1Item key={id} item={item}/>)}
+                    {items.map(({id, item}) => (
+                        <li className="col-1__item" key={id}>
+                            <Link to='/React-simen-demo/no-content' className="col-1__item__link">{item}</Link>
+                        </li>
+                    ))}
                 </ul>
             }
             {colClass &&
@@ -1111,25 +1119,7 @@ function SubMenuItem({id, props}) {
                     </div>
                 </div>
             }
-        </NavLink>
-    )
-}
-
-function SubMenuItemLink({name, isParent}) {
-    return (
-        <span
-            className={classNames('sub-menu__item__link', {'sub-menu__item__link--parent': isParent})}
-        >
-            {name}
-        </span>
-    )
-}
-
-function Col1Item({item}) {
-    return (
-        <li className="col-1__item">
-            <Link to='/React-simen-demo/no-content' className="col-1__item__link">{item}</Link>
-        </li>
+        </div>
     )
 }
 

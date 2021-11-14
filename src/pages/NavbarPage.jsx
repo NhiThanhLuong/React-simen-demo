@@ -29,6 +29,7 @@ const NavbarPage = ({namePage, products, imgCover}) => {
 
     useEffect(() => {
         handleClick()
+        // eslint-disable-next-line
     }, [option])
 
     const handleClick = () => {

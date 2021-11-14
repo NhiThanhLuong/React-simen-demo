@@ -14,8 +14,8 @@ const ProductsGrid = ({listProducts}) => {
             {trail.map(({...otherProps}, idx) => {
                 const {id, isSale, img, name, oldPrice, newPrice, rating} = listProducts[idx]
                 return (
-                    <animated.div className="col xlg-2-4 lg-2-4 md-4 sm-6 xsm-12" style={{...otherProps}}>
-                        <Product key={id} id={id} isSale={isSale} img={img} name={name} oldPrice={oldPrice} newPrice={newPrice} rating={rating}/>
+                    <animated.div key={id} className="col xlg-2-4 lg-2-4 md-4 sm-6 xsm-12" style={{...otherProps}}>
+                        <Product id={id} isSale={isSale} img={img} name={name} oldPrice={oldPrice} newPrice={newPrice} rating={rating}/>
                     </animated.div>
                 )
             })}

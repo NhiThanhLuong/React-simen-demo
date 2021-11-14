@@ -31,6 +31,7 @@ const ProductsSlider = ({products}) => {
     const h = ref.current.offsetHeight/2
     prevButton.current.style.top = `${h}px`
     nextButton.current.style.top = `${h}px`
+    console.log(h);
   }, [ref.current]);
 
     return (
@@ -71,9 +72,9 @@ const ProductsSlider = ({products}) => {
               {trail.map(({...otherProps}, idx) => {
                     const {id, isSale, img, name, oldPrice, newPrice, rating} = products[idx] 
                     return (
-                      <SwiperSlide>
+                      <SwiperSlide key={id}>
                         <animated.div className="col" style={{...otherProps}}>
-                          <Product ref={ref} key={id} id={id} isSale={isSale} img={img} name={name} oldPrice={oldPrice} newPrice={newPrice} rating={rating}/>
+                          <Product ref={ref} id={id} isSale={isSale} img={img} name={name} oldPrice={oldPrice} newPrice={newPrice} rating={rating}/>
                         </animated.div>
                       </SwiperSlide>
                     )})}
