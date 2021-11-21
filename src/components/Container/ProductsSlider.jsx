@@ -1,4 +1,5 @@
 import { animated, useTrail } from "@react-spring/web";
+import styled from 'styled-components'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -17,7 +18,7 @@ SwiperCore.use([Pagination, Navigation]);
 
 const ProductsSlider = ({products}) => {
   const swiperRef = useRef(null);
-  const ref = useRef(null)
+  const ref = useRef([])
   const prevButton = useRef(null)
   const nextButton = useRef(null)
 
@@ -28,20 +29,19 @@ const ProductsSlider = ({products}) => {
   })
 
   useEffect(() => {
-    const h = ref.current.offsetHeight/2
+    const h = ref.current[0].offsetHeight/2
     prevButton.current.style.top = `${h}px`
     nextButton.current.style.top = `${h}px`
-    console.log(h);
-  }, [ref.current]);
+  }, []);
 
     return (
           <div className="row">
-            <button className="previousButton" ref={prevButton} onClick={() => swiperRef.current.swiper.slidePrev()} >
+            <ButtonSlider className="previousButton" ref={prevButton} onClick={() => swiperRef.current.swiper.slidePrev()} >
               <i className="fas fa-long-arrow-alt-left"></i>
-            </button>
-            <button className="nextButton" ref={nextButton} onClick={() => swiperRef.current.swiper.slideNext()} >
-            <i className="fas fa-long-arrow-alt-right"></i>
-          </button>
+            </ButtonSlider>
+            <ButtonSlider className="nextButton" ref={nextButton} onClick={() => swiperRef.current.swiper.slideNext()} >
+              <i className="fas fa-long-arrow-alt-right"></i>
+            </ButtonSlider>
             <Swiper
               ref={swiperRef}
               // slidesPerView={5}
@@ -70,11 +70,11 @@ const ProductsSlider = ({products}) => {
               className="mySwiper"
             >
               {trail.map(({...otherProps}, idx) => {
-                    const {id, isSale, img, name, oldPrice, newPrice, rating} = products[idx] 
+                    const {id, isSale, img, name, oldPrice, newPrice, rating} = products[idx]
                     return (
                       <SwiperSlide key={id}>
                         <animated.div className="col" style={{...otherProps}}>
-                          <Product ref={ref} id={id} isSale={isSale} img={img} name={name} oldPrice={oldPrice} newPrice={newPrice} rating={rating}/>
+                          <Product ref={el => ref.current[idx] = el} id={id} isSale={isSale} img={img} name={name} oldPrice={oldPrice} newPrice={newPrice} rating={rating}/>
                         </animated.div>
                       </SwiperSlide>
                     )})}
@@ -84,3 +84,7 @@ const ProductsSlider = ({products}) => {
 }
 
 export default ProductsSlider
+
+const ButtonSlider = styled.button`
+  transform: translateY(-50%);
+`
